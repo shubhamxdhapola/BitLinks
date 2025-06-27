@@ -26,32 +26,6 @@ BitLinks is a minimal, fast, and secure URL shortener built with **Next.js (App 
 
 ---
 
-## 📁 Folder Structure
-
-```
-
-/app
-/api
-/generate        → POST handler to generate short URL
-/\[shorturl]       → Redirect handler
-layout.js         → Root layout
-page.js           → Home page (URL form)
-
-/lib
-/configureDB.js      → MongoDB connection
-
-/models
-/url.model.js           → Mongoose schema
-
-/public
-favicon.ico       → Favicon
-
-.env          → Environment variables
-
-````
-
----
-
 ## 🛠️ Getting Started
 
 ### 1. Clone the repo
