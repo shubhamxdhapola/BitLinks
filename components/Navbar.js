@@ -80,7 +80,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <div className="navbar bg-transparent backdrop-blur-2xl border-b border-base-200 px-4 sm:px-6 md:px-8 md:hidden">
+      <div className="navbar bg-transparent backdrop-blur-2xl border-b border-base-300 px-4 sm:px-6 md:px-8 md:hidden">
         <div className="navbar-start">
           <Link href={"/"}>
             <h2 className="font-semibold flex justify-center items-center gap-1 text-blue-500">

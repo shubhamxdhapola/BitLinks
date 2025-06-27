@@ -13,8 +13,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Toaster  position="top-center" />
+      <body data-theme="black">
+        <Toaster position="top-center" />
         <Navbar />
         {children}
       </body>
