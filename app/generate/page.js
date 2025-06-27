@@ -1,6 +1,6 @@
 "use client";
 
-import { Copy, Files, Loader2 } from "lucide-react";
+import { Files, Loader2 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { toast } from "sonner";
@@ -67,7 +67,10 @@ const Generate = () => {
       <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-8 text-center">
         Trim the Clutter, Keep the Clicks
       </h2>
-      <form onSubmit={handleOnSubmit} className="w-[90vw] sm:w-[80vw] md:w-[60vw] lg:w-[50vw]">
+      <form
+        onSubmit={handleOnSubmit}
+        className="w-[90vw] sm:w-[80vw] md:w-[60vw] lg:w-[50vw]"
+      >
         <div className="mb-4">
           <label htmlFor="long-url" className="text-xs sm:text-sm">
             Enter long URL
@@ -98,7 +101,7 @@ const Generate = () => {
           />
         </div>
         <button
-          className={`bg-blue-700 btn btn-sm sm:btn-md w-full mt-6 sm:mt-8 rounded ${
+          className={`bg-blue-700 btn btn-sm sm:btn-md w-full mt-6 sm:mt-8 rounded hover:bg-blue-800 duration-300 ${
             loading && "btn-disabled"
           }`}
           disabled={loading}
@@ -118,7 +121,9 @@ const Generate = () => {
         <div className="mt-10 w-[90vw] sm:w-[80vw] md:w-[60vw] lg:w-[50vw]">
           <div className="text-center p-4 flex items-center justify-center">
             <hr className="flex-grow border-t-1 border-primary" />
-            <span className="text-sm sm:text-base mx-4">Here's you shortned URL</span>
+            <span className="text-sm sm:text-base mx-4">
+              Here's you shortned URL
+            </span>
             <hr className="flex-grow border-t-1 border-primary" />
           </div>
           <div className="mt-4 flex justify-center items-center gap-3 w-full">
@@ -131,12 +136,15 @@ const Generate = () => {
                 {`${process.env.NEXT_PUBLIC_HOST}/${generatedUrl}`}
               </Link>
             </div>
-            <button
-              className="btn  rounded bg-blue-700"
-              onClick={handleCopyLink}
-            >
-              <Files className="size-5 sm:size-6" />
-            </button>
+
+            <div className="tooltip" data-tip="Copy">
+              <button
+                className="btn  rounded bg-blue-700"
+                onClick={handleCopyLink}
+              >
+                <Files className="size-5 sm:size-6" />
+              </button>
+            </div>
           </div>
         </div>
       )}
