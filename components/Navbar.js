@@ -6,7 +6,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-
   const pathname = usePathname();
 
   function hideSideMenu(e) {
@@ -66,12 +65,17 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-end space-x-2">
-          <button className="btn bg-blue-700 hover:bg-blue-800 duration-300 rounded-full flex justify-center items-center gap-2">
-            <span>
-              <FaGithub />
-            </span>
-            <span>GitHub</span>
-          </button>
+          <Link
+            href={"https://github.com/shubhamxdhapola/BitLinks"}
+            target="_blank"
+          >
+            <button className="btn bg-blue-700 hover:bg-blue-800 duration-300 rounded-full flex justify-center items-center gap-2">
+              <span>
+                <FaGithub />
+              </span>
+              <span>GitHub</span>
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -82,7 +86,7 @@ const Navbar = () => {
             <h2 className="font-semibold flex justify-center items-center gap-1 text-blue-500">
               <span>BitLinks</span>
               <span>
-                <Link2 className="mt-0.5" size={20}/>
+                <Link2 className="mt-0.5" size={20} />
               </span>
             </h2>
           </Link>
@@ -118,7 +122,11 @@ const Navbar = () => {
           >
             My URLs
           </Link>
-          <Link href={"/"} className="mt-4">
+          <Link
+            href={"https://github.com/shubhamxdhapola/BitLinks"}
+            className="mt-4"
+            target="_blank"
+          >
             <button className="btn bg-blue-700 hover:bg-blue-800 duration-300 rounded flex justify-center items-center gap-2 mx-3 w-full">
               <span>
                 <FaGithub />

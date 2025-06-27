@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# 🔗 BitLinks - URL Shortener App
 
-First, run the development server:
+BitLinks is a minimal, fast, and secure URL shortener built with **Next.js (App Router)**, **MongoDB**, and **Tailwind CSS**. Users can shorten long URLs, get custom short links, and track redirections seamlessly.
+
+---
+
+## 🚀 Features
+
+- 🔐 Shorten long URLs with a single click
+- 🧭 Automatic redirection from short URL to original
+- 📦 MongoDB integration for data persistence
+- ✅ Duplicate prevention
+- ⚡ Built with Next.js 13+ (App Router)
+- 🎨 Clean UI with Tailwind CSS
+- 🛡️ Input validation and error handling
+
+---
+
+## 🧰 Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Database**: [MongoDB](https://www.mongodb.com/)
+- **ORM**: [Mongoose](https://mongoosejs.com/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+
+---
+
+## 📁 Folder Structure
+
+```
+
+/app
+/api
+/generate        → POST handler to generate short URL
+/\[shorturl]       → Redirect handler
+layout.js         → Root layout
+page.js           → Home page (URL form)
+
+/lib
+/configureDB.js      → MongoDB connection
+
+/models
+/url.model.js           → Mongoose schema
+
+/public
+favicon.ico       → Favicon
+
+.env          → Environment variables
+
+````
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/shubhamxdhapola/BitLinks.git
+cd BitLinks
+````
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Set up environment variables
+
+Create a `.env` file:
+
+```
+MONGO_ATLAS_URI=your_mongodb_connection_string
+NEXT_PUBLIC_HOST=you_next_public_host_string
+```
+
+### 4. Run the dev server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌐 API Endpoints
 
-## Learn More
+### `POST /api/generate`
 
-To learn more about Next.js, take a look at the following resources:
+* **Body**: `{ "longUrl": "https://example.com" }`
+* **Returns**: `{ "shortUrl": "abc123" }`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `GET /:shortUrl`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Redirects to original URL if exists, else shows 404.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔐 Upcoming Features (Planned)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* 🧑‍💻 **Authentication System**
+
+  * Sign up / Sign in with Google, GitHub, etc.
+  * Auth-protected routes using NextAuth or similar
+
+* 📊 **User Dashboard**
+
+  * View, manage, and delete your own shortened URLs
+  * Track click statistics
+
+---
+
+## 🤝 Contributions
+
+Contributions are welcome! Fork the repository and submit a pull request. For major changes, open an issue first to discuss what you'd like to change.
+
+---
+
+## 📄 License
+
+MIT License © [Your Name](https://github.com/yourusername)
+
+```
