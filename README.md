@@ -11,7 +11,7 @@ BitLinks is a minimal, fast, and secure URL shortener built with **Next.js (App 
 - 📦 MongoDB integration for data persistence
 - ✅ Duplicate prevention
 - ⚡ Built with Next.js 13+ (App Router)
-- 🎨 Clean UI with Tailwind CSS
+- 🎨 Clean UI with Tailwind CSS and Daisy UI
 - 🛡️ Input validation and error handling
 
 ---
@@ -21,7 +21,7 @@ BitLinks is a minimal, fast, and secure URL shortener built with **Next.js (App 
 - **Framework**: [Next.js](https://nextjs.org/) (App Router)
 - **Database**: [MongoDB](https://www.mongodb.com/)
 - **ORM**: [Mongoose](https://mongoosejs.com/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) and [Tailwind CSS](https://daisyui.com/)
 
 ---
 
