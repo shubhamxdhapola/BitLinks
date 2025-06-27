@@ -1,4 +1,3 @@
-
 # 🔗 BitLinks - URL Shortener App
 
 BitLinks is a minimal, fast, and secure URL shortener built with **Next.js (App Router)**, **MongoDB**, and **Tailwind CSS**. Users can shorten long URLs, get custom short links, and track redirections seamlessly.
@@ -96,6 +95,6 @@ Contributions are welcome! Fork the repository and submit a pull request. For ma
 
 ## 📄 License
 
-MIT License © [Your Name](https://github.com/yourusername)
+MIT License © [Shubham Dhapola](https://github.com/shubhamxdhapola)
 
 ```
