@@ -1,12 +1,4 @@
-import {
-  ArrowRight,
-  Facebook,
-  Info,
-  Instagram,
-  Link2,
-  TrendingUp,
-  Twitter,
-} from "lucide-react";
+import { Link2 } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -17,7 +9,7 @@ export default function Home() {
           <h2 className="font-extrabold tracking-tight text-2xl sm:text-3xl lg:text-4xl text-blue-500 flex items-center gap-2 mb-5 border-b border-blue-500">
             <span>BitLinks</span>{" "}
             <span className="mt-1">
-              <Link2  className="size-6 sm:size-7.5 lg:size-9" />
+              <Link2 className="size-6 sm:size-7.5 lg:size-9" />
             </span>
           </h2>
           <h3 className="font-extrabold tracking-tight text-3xl sm:text-3xl md:text-4xl lg:text-5xl text-center ">
@@ -29,14 +21,14 @@ export default function Home() {
             creators who value clarity and clicks.
           </p>
           <div className="mt-6 flex justify-center items-center gap-3">
-           <Link href={'/generate'}>
+            <Link href={"/generate"}>
               <button
                 type="button"
                 className="btn btn-sm sm:btn-md inline-flex justify-center items-center gap-2 rounded-full bg-blue-700 hover:bg-blue-800 duration-300 "
               >
                 <span> Get Started</span>
               </button>
-           </Link>
+            </Link>
 
             <button
               type="button"

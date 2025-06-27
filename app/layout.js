@@ -1,21 +1,13 @@
-// import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "sonner";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
 export const metadata = {
-  title: "BitLinks - Your trusted URL shortner",
+  title: "BitLinks - Your Trusted URL Shortner",
   description: "Bitlinks helps you to shorten your URL's easily.",
+  icons : {
+    icon : '/favicon.png'
+  }
 };
 
 export default function RootLayout({ children }) {
