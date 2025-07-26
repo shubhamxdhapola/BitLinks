@@ -3,7 +3,7 @@
 import { Files, Loader2 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import { toast } from "sonner";
+import { toast } from "react-hot-toast";
 
 const Generate = () => {
   const defaultFormData = {

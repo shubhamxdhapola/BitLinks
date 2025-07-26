@@ -1,6 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import { Toaster } from "sonner";
+import {Toaster} from 'react-hot-toast'
 
 export const metadata = {
   title: "BitLinks - Your Trusted URL Shortner",
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body data-theme="black">
-        <Toaster position="top-center" />
+        <Toaster  />
         <Navbar />
         {children}
       </body>

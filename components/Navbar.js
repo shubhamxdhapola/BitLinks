@@ -2,7 +2,7 @@
 import { AlignRight, Link2, X } from "lucide-react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
