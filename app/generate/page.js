@@ -6,6 +6,7 @@ import { useState } from "react";
 import { toast } from "react-hot-toast";
 
 const Generate = () => {
+  
   const defaultFormData = {
     longUrl: "",
     shortUrl: "",
